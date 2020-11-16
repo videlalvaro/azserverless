@@ -1,0 +1,27 @@
+{
+    "name": "videlalvaro/azserverless",
+    "description": "\"PHP Custom Handler for Azure Functions\"",
+    "keywords": ["azure", "functions", "serverless"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alvaro Videla",
+            "email": "videlalvaro@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Azserverless\\": "src/Azserverless"
+        }
+    },
+    "require": {
+        "php": ">=7.2",
+        "ext-json": "*",
+        "monolog/monolog": "^2.1"
+    },
+    "bin": [
+        "bin/serverless.php"
+    ]
+}
