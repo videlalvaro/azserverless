@@ -9,7 +9,7 @@ function fatalErrorShutdownHandler() {
     $response = [
         'Outputs' => NULL,
         'ReturnValue' => sprintf("m: %s; f: %s; l: %s\n", $last_error['message'], $last_error['file'], $last_error['line']),
-        'Logs' => $this->getLogs()
+        'Logs' => []
     ];
     header("Content-type: application/json");
     echo(json_encode($response));
