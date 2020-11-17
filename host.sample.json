@@ -1,0 +1,30 @@
+{
+	"version": "2.0",
+	"extensionBundle": {
+		"id": "Microsoft.Azure.Functions.ExtensionBundle",
+		"version": "[1.*, 2.0.0)"
+	},
+	"customHandler": {
+		"description": {
+      "defaultExecutablePath": "php",
+      "arguments": [
+        "-S",
+        "0.0.0.0:%FUNCTIONS_CUSTOMHANDLER_PORT%",
+        "vendor/bin/serverless.php"
+      ]
+    },
+    "enableForwardingHttpRequest": false
+  },
+  "logging": {
+    "logLevel": {
+      "Function.HttpTrigger.User": "Information",
+      "Function.QueueTrigger.User": "Information",
+      "default": "Warning"
+    },
+    "applicationInsights": {
+      "samplingSettings": {
+        "isEnabled": true
+      }
+    }
+  }
+}
