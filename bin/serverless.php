@@ -5,7 +5,7 @@ register_shutdown_function('fatalErrorShutdownHandler');
 
 function fatalErrorShutdownHandler() {
   $last_error = error_get_last();
-  if ($last_error['type'] === E_ERROR) {
+  if (is_array($last_error) && $last_error['type'] === E_ERROR) {
     $response = [
         'Outputs' => NULL,
         'ReturnValue' => sprintf("m: %s; f: %s; l: %s\n", $last_error['message'], $last_error['file'], $last_error['line']),
