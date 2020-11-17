@@ -52,11 +52,10 @@ class Router {
         $handler = $this->baseFunctionsDir . $requestUri . '/index.php';
         if (file_exists($handler)) {
             require_once($handler);
+            $returnValue = run($this->context);
         } else {
-            throw new \Exception(sprintf("Cannot find handler: %s", $requestUri));
+            $returnValue = sprintf("No Handler found for specified path: %s.", $requestUri);
         }
-
-        $returnValue = run($this->context);
 
         // $functionOut = ob_get_contents();
 
