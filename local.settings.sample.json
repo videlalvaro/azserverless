@@ -2,6 +2,6 @@
   "IsEncrypted": false,
   "Values": {
     "FUNCTIONS_WORKER_RUNTIME": "custom",
-    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=<acountname>;AccountKey=<accoutkey>;EndpointSuffix=<endpointsuffix>"
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=<accountname>;AccountKey=<accoutkey>;EndpointSuffix=<endpointsuffix>"
   }
 }
