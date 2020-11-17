@@ -42,7 +42,9 @@ class Router {
         $requestBody = file_get_contents('php://input');
         $request = json_decode($requestBody, true);
 
-        $this->context->inputs = $request['Data'];
+        if (is_array($request) && array_key_exists('Data', $request)) {
+            $this->context->inputs = $request['Data'];
+        }
 
         // ob_start();
 
