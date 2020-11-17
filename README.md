@@ -99,6 +99,6 @@ To learn more about the details of serverless on Azure, take a look at the [Azur
 
 ## Deployment ##
 
-Follow the instructions here to enable PHP 7.4 & make sure composer is run while deploying your function app to Azure: [https://docs.microsoft.com/en-us/azure/app-service/configure-language-php?pivots=platform-windows#set-php-version](https://docs.microsoft.com/azure/app-service/configure-language-php?pivots=platform-windows&WT.mc_id=data-11039-alvidela#set-php-version)
+Follow the instructions here to enable PHP 7.4 & make sure composer is run while deploying your function app to Azure: [Configure a PHP app for Azure App Service](https://docs.microsoft.com/azure/app-service/configure-language-php?pivots=platform-windows&WT.mc_id=data-11039-alvidela#set-php-version)
 
 When the options for Azure CLI require a `--name` option, provide your Azure Functions app name.
