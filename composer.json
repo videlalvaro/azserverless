@@ -15,7 +15,6 @@
             "email": "anthony@anthonychu.ca"
         }
     ],
-    "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
             "Azserverless\\": "src/Azserverless"
