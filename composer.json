@@ -1,6 +1,6 @@
 {
     "name": "videlalvaro/azserverless",
-    "version" "0.0.1-alpha",
+    "version": "0.0.1-alpha",
     "description": "\"PHP Custom Handler for Azure Functions\"",
     "keywords": ["azure", "functions", "serverless"],
     "type": "library",
