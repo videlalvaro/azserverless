@@ -53,7 +53,7 @@ class Router {
         if (file_exists($handler)) {
             require_once($handler);
         } else {
-            throw new Exception(sprintf("Cannot find handler: %s", $requestUri));
+            throw new \Exception(sprintf("Cannot find handler: %s", $requestUri));
         }
 
         $returnValue = run($this->context);
