@@ -46,7 +46,13 @@ class Router {
 
         // ob_start();
 
-        require $this->baseFunctionsDir . $requestUri . '/index.php';
+        // TODO check if file exists, if it doesn't throw exception, else load.
+        $handler = $this->baseFunctionsDir . $requestUri . '/index.php';
+        if (file_exists($handler)) {
+            require_once($handler);
+        } else {
+            throw new Exception(sprintf("Cannot find handler: %s", $requestUri));
+        }
 
         $returnValue = run($this->context);
 
