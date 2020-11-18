@@ -10,7 +10,7 @@
       "arguments": [
         "-S",
         "0.0.0.0:%FUNCTIONS_CUSTOMHANDLER_PORT%",
-        "vendor/bin/serverless.php"
+        "vendor/videlalvaro/azserverless/bin/serverless.php"
       ]
     },
     "enableForwardingHttpRequest": false

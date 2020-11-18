@@ -27,7 +27,7 @@ Then start an Azure Functions project. In your `host.json` add the following:
         "arguments": [
             "-S",
             "0.0.0.0:%FUNCTIONS_CUSTOMHANDLER_PORT%",
-            "vendor/bin/serverless.php"
+            "vendor/videlalvaro/azserverless/bin/serverless.php"
         ]
     },
     "enableForwardingHttpRequest": false
