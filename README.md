@@ -8,7 +8,7 @@ In your composer.json add the following dependency:
 
 ```json
 "require": {
-        "videlalvaro/azserverless": "*"
+        "videlalvaro/azserverless": "dev-main"
 }
 ```
 
